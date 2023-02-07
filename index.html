@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div class="container flex flex-col m-auto">
+        <header class="self-start">
+            <h1 class="text-2xl font-[Montserrat] font-semibold mt-8 ml-3 mb-5">Checkout</h1>
+        </header>
+        <main class="lg:flex lg:flex-row-reverse lg:justify-between lg:items-start lg:gap-20">
+            <div class="bg-[#F2F2F2] rounded-md m-2 flex flex-col">
+                <div class="flex">
+                    <div class="w-40 p-4">
+                        <img src="img/photo1.png" alt="" class="rounded-md">
+                    </div>
+                    <div class="m-4 font-[Montserrat] flex flex-col justify-between">
+                        <div>
+                            <p class="font-semibold text-xs w-28">Vintage Backbag</p>
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-sm text-[#F2994A]">$54.99</p>
+                                <p class="text-[0.625rem] line-through">$94.99</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-2 rounded-md">
+                            <button class="bg-[#E0E0E0] w-4 m-2 text-[#828282]">-</button>
+                            <p>1</p>
+                            <button class="bg-[#E0E0E0] w-4 m-2 text-[#828282]">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="w-40 p-4">
+                        <img src="img/photo2.png" alt="" class="rounded-md">
+                    </div>
+                    <div class="m-4 font-[Montserrat] flex flex-col justify-between">
+                        <div>
+                            <p class="font-semibold text-xs w-28">Levi Shoes</p>
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-sm text-[#F2994A]">$54.99</p>
+                                <p class="text-[0.625rem] line-through">$94.99</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center border-2 rounded-md">
+                            <button class="bg-[#E0E0E0] w-4 m-2 text-[#828282]">-</button>
+                            <p>1</p>
+                            <button class="bg-[#E0E0E0] w-4 m-2 text-[#828282]">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-[Montserrat] m-5">
+                    <div class="flex justify-between border-t-2 p-1">
+                        <p class="text-sm">Shipping</p>
+                        <p>$19</p>
+                    </div>
+                    <div class="flex justify-between border-t-2 p-1">
+                        <p class="text-sm">Total</p>
+                        <p>$148.98</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grow">
+                <div class="m-3 mt-10 lg:mt-0">
+                    <div class="lg:mb-6">
+                        <p>Contact infomation</p>
+                    </div>
+                    <div class="text-[Montserrat]">
+                        <form action="">
+                            <label for="" class="text-[0.625rem] lg:text-xs">E-mail</label>
+                            <div class="border-2 rounded-md flex gap-2 items-center">
+                                <span class="material-icons text-[#828282] ml-2" style="font-size: 1rem;">email</span>
+                                <input
+                                    class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                    type="text" name="name" id="name" placeholder="Enter your email ...">
+                            </div>
+    
+                            <label for="" class="text-[0.625rem] lg:text-xs">Phone</label>
+                            <div class="border-2 rounded-md flex gap-2 items-center">
+                                <span class="material-icons text-[#828282] ml-2" style="font-size: 1rem;">phone</span>
+                                <input
+                                    class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                    type="tel" name="phone" id="phone" placeholder="Enter your phone ...">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="m-3 mt-10">
+                    <div>
+                        <p>Shipping Address</p>
+                    </div>
+                    <div class="text-[Montserrat]">
+                        <form action="">
+                            <label for="" class="text-[0.625rem] lg:text-xs">Full name</label>
+                            <div class="border-2 rounded-md flex gap-2 items-center">
+                                <span class="material-icons text-[#828282] ml-2"
+                                    style="font-size: 1rem;">account_circle</span>
+                                <input
+                                    class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                    type="text" name="name" id="name" placeholder="Enter your name ...">
+                            </div>
+    
+                            <label for="" class="text-[0.625rem] lg:text-xs">Address</label>
+                            <div class="border-2 rounded-md flex gap-2 items-center">
+                                <span class="material-icons text-[#828282] ml-2" style="font-size: 1rem;">home</span>
+                                <input
+                                    class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                    type="text" name="address" id="address" placeholder="Enter your address ...">
+                            </div>
+    
+                            <label for="" class="text-[0.625rem] lg:text-xs">City</label>
+                            <div class="border-2 rounded-md flex gap-2 items-center">
+                                <span class="material-icons text-[#828282] ml-2" style="font-size: 1rem;">business</span>
+                                <input
+                                    class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                    type="text" name="address" id="address" placeholder="Your city...">
+                            </div>
+    
+                            <div class="flex justify-between gap-5">
+                                <div class="w-full">
+                                    <label for="" class="text-[0.625rem] lg:text-xs">Country</label>
+                                    <div class="border-2 rounded-md flex gap-2 items-center">
+                                        <span class="material-icons text-[#828282] ml-2"
+                                            style="font-size: 1rem;">public</span>
+                                            <select name="" id="" class="p-1 lg:p-3 w-full rounded-md text-xs lg:text-base focus:outline-none  focus:border-sky-500 focus:ring-2 bg-transparent text-[#828282]">
+                                                <option value="">Your Country...</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <label for="" class="text-[0.625rem] lg:text-xs">Postal code</label>
+                                    <div class="border-2 rounded-md flex gap-2 items-center">
+                                        <span class="material-icons text-[#828282] ml-2"
+                                            style="font-size: 1rem;">markunread_mailbox</span>
+                                        <input
+                                            class="p-1 lg:p-3 w-full rounded-md text-sm focus:outline-none placeholder:text-xs focus:border-sky-500 focus:ring-2 lg:placeholder:text-base"
+                                            type="text" name="address" id="address" placeholder="Your postal code...">
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="rounded-md mt-3 flex gap-2 items-center">
+                                <input type="checkbox" name="" id="">
+                                <label for="" class="text-[0.625rem] lg:text-xs">Save this information for next time</label>
+                            </div>
+    
+                            <div class="flex justify-end items-center m-3 text-[Montserrat]">
+                                <button class="bg-[#F2994A] text-white p-3 rounded-md w-36">Continue</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="text-[Montserrat] text-sm text-[#BDBDBD] mt-10 mb-3 lg:mt-60">
+            <p class="text-center">created by username - devChallenges.io</p>
+        </footer>
+        
+    </div>
+</body>
+
+</html>
